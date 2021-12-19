@@ -1,4 +1,4 @@
-package middlewares
+package service
 
 import (
 	"counterapi/models"

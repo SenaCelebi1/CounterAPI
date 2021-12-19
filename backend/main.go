@@ -1,12 +1,12 @@
 package main
 
 import (
-	"counterapi/middlewares"
+	"counterapi/service"
 	"net/http"
 )
 
 func main() {
 
-	http.HandleFunc("/", middlewares.Calc)
+	http.HandleFunc("/", service.Calc)
 	http.ListenAndServe(":8090", nil)
 }
